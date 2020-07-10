@@ -1,0 +1,406 @@
+/* ---WEB FONTS ---*/
+@import url(https://fonts.googleapis.com/css?family=Holtwood+One+SC); /* Firefox */
+
+@font-face {
+	font-family: 'Compacta';
+	src: url('http://files.gamebanana.com/bitpit/compacta_bold_bt-webfont.eot');
+	src: url('http://files.gamebanana.com/bitpit/compacta_bold_bt-webfont.eot?#iefix') format('embedded-opentype'), url('http://files.gamebanana.com/bitpit/compacta_bold_bt-webfont.woff') format('woff'), url('http://files.gamebanana.com/bitpit/compacta_bold_bt-webfont.ttf') format('truetype'), url('http://files.gamebanana.com/bitpit/compacta_bold_bt-webfont.svg#compacta_bd_btbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* ---GLOBAL STYLES ---*/
+body {
+	background: url(http://www.abload.de/img/borderlands22012-09-2vpzsg.jpg) #5e88a6 no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Compacta", "Compacta Bold BT", sans-serif;
+	font-size: 24px;
+	text-shadow: 2px 0 1px #000, 0 2px 1px #000, -2px 0 1px #000, 0 -2px 1px #000;
+	color: white;
+}
+
+p,.checkbox {
+	display: inline-block;
+}
+
+h1 {
+	color: #93e3e6;
+	font-size: 28px;
+}
+
+.emph {
+	font-size: 32px;
+}
+
+#topRight {
+	position: absolute;
+	margin: 25px;
+	right: 25px;
+	top: 25px;
+	text-align: right;
+
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+#leftBars {
+	position: absolute;
+	left: 50px;
+	bottom: 75px;
+
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+#rightBars {
+	position: absolute;
+	right: 50px;
+	bottom: 75px;
+
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+/* ---MINIMAP ---*/
+#minimap {
+	height: 150px;
+	width: 150px;
+	margin-bottom: 25px;
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+}
+
+#minimap div {
+	width: 175px;
+	height: 200px;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	top: -25px;
+	left: -12.5px;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	overflow: hidden;
+	border: 2px solid black;
+}
+
+#minimap div:before,#minimap div:after {
+	/*border*/
+content: "";
+	position: absolute;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	width: 135px;
+	height: 135px;
+	top: 23px;
+	left: 16px;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+}
+
+#minimap div:after {
+	top: 41px;
+	left: 16px;
+	border: none;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+}
+
+/* ---MISSION ---*/
+#mission {
+	width: 500px;
+	position: absolute;
+	top: 160px;
+	right: 0;
+}
+
+.checkbox {
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 4px;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	margin: 0 5px;
+	overflow: hidden;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+  appearance:none;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: black;
+	border-right: 2px solid white;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: -3px;
+	bottom: -3px;
+	overflow: hidden;
+}
+
+input:checked {
+	background: red;
+}
+
+input[type="checkbox"]:before,input[type="checkbox"]:after {
+	content: "";
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: -1px;
+	right: 3px;
+	height: 25px;
+	width: 0;
+	border-right: 2px solid white;
+}
+
+input[type="checkbox"]:after {
+	top: 27px;
+	right: -10px;
+	border-bottom: 2px solid white;
+	width: 25px;
+	height: 0;
+}
+
+/* ---BARS GENERAL ---*/
+.bcontainer {
+	position: relative;
+	margin: 5px;
+}
+
+.bcontainer p {
+	position: absolute;
+	left: 10px;
+	top: -10px;
+	z-index: 1;
+}
+
+.bar {
+	position: relative;
+	width: 250px;
+	height: 25px;
+	overflow: hidden;
+}
+
+.bar div {
+	/*color&mask*/
+display: block;
+
+	background: -webkit-linear-gradient(-45deg, #4b808e 56%, #17dce4 66%);
+	background: -moz-linear-gradient(-45deg, #4b808e 56%, #17dce4 66%);
+	background: -o-linear-gradient(-45deg, #4b808e 56%, #17dce4 66%);
+	background: -ms-linear-gradient(-45deg, #4b808e 56%, #17dce4 66%);
+	background: linear-gradient(-45deg, #4b808e 56%, #17dce4 66%);
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 100%;
+	height: 1000%;
+	position: absolute;
+	top: -83px;
+	left: -35px;
+	overflow: hidden;
+	border-top: 2px solid black;
+}
+
+.bar div:after {
+	/*border&pattern*/
+content: "";
+	position: absolute;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	background-image: url(https://i.imgur.com/2uUhoGN.png);
+	width: 246px;
+	height: 21px;
+	top: 65px;
+	left: 3px;
+	border: 2px solid black;
+
+	-webkit-animation: bgSlide 1s ease alternate infinite;
+	-moz-animation: bgSlide 1s ease alternate infinite;
+	-ms-animation: bgSlide 1s ease alternate infinite;
+	-o-animation: bgSlide 1s ease alternate infinite;
+	animation: bgSlide 1s ease alternate infinite;
+}
+
+.bar.mirrored div {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
+	background: -webkit-linear-gradient(45deg, #4b808e 56%, #17dce4 66%);
+	background: -moz-linear-gradient(45deg, #4b808e 56%, #17dce4 66%);
+	background: -o-linear-gradient(45deg, #4b808e 56%, #17dce4 66%);
+	background: -ms-linear-gradient(45deg, #4b808e 56%, #17dce4 66%);
+	background: linear-gradient(45deg, #4b808e 56%, #17dce4 66%);
+	left: 35px;
+}
+
+.bar.mirrored div:after {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 65px;
+	left: -4px;
+}
+
+/* ---INDIVIDUAL BARS ---*/
+#health p,#ammo p {
+	top: 5px;
+}
+
+#health div div {
+	background: -webkit-linear-gradient(-45deg, #bc1529 56%, #bc392f 66%);
+	background: -moz-linear-gradient(-45deg, #bc1529 56%, #bc392f 66%);
+	background: -o-linear-gradient(-45deg, #bc1529 56%, #bc392f 66%);
+	background: -ms-linear-gradient(-45deg, #bc1529 56%, #bc392f 66%);
+	background: linear-gradient(-45deg, #bc1529 56%, #bc392f 66%);
+}
+
+#health div div:after {
+	/*border&pattern*/
+background-image: -webkit-linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 51%,rgba(0,0,0,0.1) 100%);
+
+	background-image: -moz-linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 51%,rgba(0,0,0,0.1) 100%);
+	background-image: -o-linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 51%,rgba(0,0,0,0.1) 100%);
+	background-image: -ms-linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 51%,rgba(0,0,0,0.1) 100%);
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 51%,rgba(0,0,0,0.1) 100%);
+
+	-webkit-background-size: 16px 1px;
+	-moz-background-size: 16px 1px;
+	background-size: 16px 1px;
+}
+
+#ammo p {
+	left: 195px;
+}
+
+#ammo div div {
+	background: -webkit-linear-gradient(45deg, #425e9d 56%, #5984bb 66%);
+	background: -moz-linear-gradient(45deg, #425e9d 56%, #5984bb 66%);
+	background: -o-linear-gradient(45deg, #425e9d 56%, #5984bb 66%);
+	background: -ms-linear-gradient(45deg, #425e9d 56%, #5984bb 66%);
+	background: linear-gradient(45deg, #425e9d 56%, #5984bb 66%);
+}
+
+#ammo div div:after {
+	background: url(https://i.imgur.com/Glmxz5M.png);
+	background-position: -75px bottom;
+}
+
+/* ---XP BAR ---*/
+#xpBar {
+	background: -webkit-linear-gradient(-45deg, #414141 45%, #000 46%, #000 54%, #414141 55%);
+	background: -moz-linear-gradient(-45deg, #414141 45%, #000 46%, #000 54%, #414141 55%);
+	background: -o-linear-gradient(-45deg, #414141 45%, #000 46%, #000 54%, #414141 55%);
+	background: -ms-linear-gradient(-45deg, #414141 45%, #000 46%, #000 54%, #414141 55%);
+	background: linear-gradient(-45deg, #414141 45%, #000 46%, #000 54%, #414141 55%);
+
+	-webkit-background-size: 50px 1px;
+	-moz-background-size: 50px 1px;
+	background-size: 50px 1px;
+	width: 500px;
+	height: 5px;
+	position: absolute;
+	left: 50%;
+	bottom: 100px;
+	margin-left: -250px;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+}
+
+#xpBar:before,#xpBar:after {
+	content: "";
+	background: #414141;
+	width: 25px;
+	height: 5px;
+	position: absolute;
+	left: -25px;
+	top: -3px;
+	border: 5px solid black;
+	border-left: 3px solid black;
+	border-right: none;
+
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+#xpBar:after {
+	left: 498px;
+
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	transform: rotate(10deg);
+	border-left: none;
+	border-right: 3px solid black;
+}
+
+#xpBar p {
+	position: absolute;
+	left: 5px;
+	top: 15px;
+	font-size: 28px;
+}
+
+#xpArrow {
+	position: absolute;
+	left: 50%;
+	top: 10px;
+	margin-left: -5px;
+	border: 5px solid transparent;
+	border-top: 5px solid black;
+}

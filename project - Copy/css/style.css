@@ -1,0 +1,372 @@
+/*------------------main---------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #3e342ced;		
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #3e342ced;
+}
+
+
+a.active {
+	color: #3e342ced;
+}
+
+/*------------------cover--------------------*/
+
+.wrapper {
+  background: url(../photos/rustic.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.opacity {
+    background: #00000060;
+	text-align: center;
+    height: 100%;
+    width: 100%;	
+}
+
+.cover {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);	
+}
+
+.opacity h1 {
+	color: white;
+	padding: 8%;
+	padding-bottom: 0;
+	font-size: 90px;
+}
+
+.opacity h2 {
+	color: darkseagreen;
+	padding: 1%;
+}
+
+.opacity p {
+	color: white;
+	padding: 1%;
+}
+
+.enter {
+    background: none;
+    border: 1px solid white;
+    padding: 2% 5%;
+	margin: 3%;
+    color: white;	
+}
+
+.enter:hover {
+	color: darkseagreen;
+	border-color: darkseagreen;
+	cursor: pointer;
+}
+
+footer {
+    padding: 1%;
+    background: darkseagreen;
+    color: white;
+    bottom: 0;
+    position: absolute;
+    width: 98%;
+}
+
+/*------------------menu----------------------*/
+
+.coffee-background {
+	background-image: url(../photos/pattern-brown.png);	
+}
+
+header {
+	text-align: center;
+}
+
+.wrapper-menu {
+	position: relative;
+	text-align: center;
+	background: #dedede;
+}
+
+nav {
+	background: white;
+    padding: 1%;	
+}
+
+nav a {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.coffeePastries {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 61px;
+    letter-spacing: 16px;
+    color: white;
+    font-weight: 100;
+}
+
+h1.quote {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+h3.author {
+    text-align: center;
+    color: white;
+    font-weight: 100;	
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h6 {
+	padding: 1%;
+}
+
+.menu {
+	background: #3e342ced;	
+	margin: 5% 10%;
+	padding: 0 4%;
+	color: white;
+	border: 4px solid #dedede;
+}
+
+#menu h2 {
+	color: white;
+	text-align: center;
+	padding: 2%;
+}
+
+.vertical-text {
+	transform: rotate(90deg);
+    transform-origin: left top 0;
+    letter-spacing: 10px;
+	color: darkseagreen;
+}
+
+.column {
+	float: left;
+    width: 40%;
+	padding: 0 5%;
+}
+
+.row-for-media {
+	display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column p {
+	font-size: 12px;
+	padding: 5%;
+}
+
+.price {
+	text-align: right;
+	padding-top: 0;
+}
+
+
+/*------------------about---------------------*/
+
+#aboutUs {
+	padding-bottom: 1%;
+}
+
+#aboutUs h1 {
+	margin-top: 3%;
+}
+
+#aboutUs h2 {
+	color: white;
+	text-align: center;
+	padding: 2%;	
+}
+	
+#aboutUs h3 {
+	margin-bottom: 3%;
+}	
+	
+iframe {
+	margin: 0px 10%;
+}	
+
+
+.box {
+	color: white;
+	text-align: center;
+}
+
+#box {
+	color: white;
+}
+
+#box:hover {
+	font-weight: bold;
+}
+
+.gallery {
+	background: #00000080;
+	text-align: center;
+    height: 100%;
+    width: 92%;
+    padding: 0 4%;
+	position: absolute;
+    bottom: 0;
+	display: none;
+}
+	
+h1 {
+	padding: 1% 1% 0% 1%;
+    color: white;
+}	
+	
+.rows {
+	display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px 4px 4px;
+    background: white;
+    width: 85%;
+    margin: 1% auto;
+}
+
+.columns {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columns img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.close {
+	float: right;
+    padding: 0;
+    border: none;
+	background: none;
+	color: white;
+}
+
+.close:hover {
+	cursor: pointer;
+}
+
+.footer {
+	color: #4b423a;
+	text-align: center;
+    background: whitesmoke;
+}
+
+.footer h1 {
+	color: #white;
+	padding-top: 2%;
+}
+
+.footer address {
+    padding-top: 2%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 3% 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+
+li h3 {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+li p {
+    margin: 3% 0px;
+    font-size: 15px;
+}
+
+li img {
+  padding: 4%;
+}
+
+/*------------------media--------------------*/
+
+@media only screen and (max-width: 785px) {
+
+/*-------------------menu----------------------*/
+
+.menu {
+	border: 2px solid #dedede;
+	padding: 0 7%;
+}
+
+.opacity h1 {
+	padding: 0;
+}
+
+h1.coffeePastries {
+	font-weight: initial;
+	font-size: 30px;
+	letter-spacing: 12px;
+}
+
+.column {
+	width: 100%;
+	padding: 0 6%;
+}
+
+/*----------------about--------------------*/
+
+ .columns {
+    flex: 50%;
+    max-width: 50%;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .columns {
+    flex: 100%;
+    max-width: 100%;
+}
+}	
